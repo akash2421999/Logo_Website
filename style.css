@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 1.5rem;
+  color: red;
+  font-family: 'Brush Script MT', cursive;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+p {
+  width: 90%;
+}
+button {
+  border: none;
+  background-color: #a90000;
+  color: #fff;
+  border-radius: 3px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.nav-bar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-content: space-between;
+  padding: 0.5rem 4rem 0;
+  align-items: center;
+}
+.top-contact {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+  color: #a09e9e;
+}
+.d-flex {
+  position: relative;
+}
+.fa-search {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
+  color: #a09e9e;
+}
+.social-media-icons i {
+  padding: 0 0.25rem;
+  font-size: 2rem;
+}
+input.form-control {
+  margin-right: 0 !important;
+  border: none;
+  background-color: #f1f2f9;
+  height: 30px;
+}
+.website-logo {
+  width: 4rem;
+  margin: 0 auto;
+}
+.website-logo img {
+  width: 100%;
+}
+.active {
+  color: red !important;
+}
+.nav-link {
+  color: #000;
+}
+.nav-link:hover {
+  color: red;
+}
+.chat-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.menu-items img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+.img-item {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+.item-3-text h1,
+.item-4-text h1,
+.item-5-text h1,
+.item-6-text h1 {
+  font-weight: 700;
+  text-shadow: 2px -2px #fff, -2px 2px #fff, -2px -2px #fff, 2px 2px #fff;
+}
+.sub-row {
+  position: relative;
+  object-fit: contain;
+}
+.item-2,
+.item-3 {
+  display: grid;
+  grid-template-columns: 60% 38%;
+  gap: 1rem;
+  padding: 1rem 0 0;
+}
+.item-3 > div:first-child {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  object-fit: contain;
+}
+.item-2-text {
+  position: absolute;
+  top: 20%;
+  right: 0%;
+}
+.item-2-text button {
+  margin: 2rem 0;
+}
+.item-3-text button,
+.item-4-text button {
+  margin: 1rem 0;
+}
+.item-6-text button {
+  margin: 1rem;
+}
+.item-3-text {
+  position: absolute;
+  top: 10%;
+  right: 40%;
+}
+.item-4-text {
+  position: absolute;
+  top: 5%;
+  right: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.item-5-text {
+  position: absolute;
+  top: 5%;
+  right: 12%;
+}
+.item-6-text {
+  position: absolute;
+  top: 4%;
+  right: 1.5%;
+}
+.card-item {
+  text-align: center;
+  width: 20rem;
+  padding-top: 1rem;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+.m-card {
+  width: 20.9rem;
+}
+.card-img img {
+  width: 100%;
+  box-shadow: 0px 0px 5px #ccc;
+  padding: 0.25rem 5rem;
+}
+.card-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1.5rem;
+  align-items: baseline;
+  justify-content: center;
+}
+.main-text {
+  text-align: center;
+  color: #a90000;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+.card-h1 {
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+  font-weight: 900;
+}
+.card-p {
+  color: #a09e9e;
+  width: 100%;
+}
+.card-a {
+  border: none;
+  color: #a09e9e;
+  text-decoration: none;
+  border-bottom: 2px solid #a09e9e;
+  display: inline-block;
+}
+.card-a:hover {
+  color: #a90000 !important;
+  border-bottom: 2px solid #a90000;
+}
+.stories-item img {
+  width: 100%;
+}
+.stories-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 1rem;
+}
+.stories-item {
+  object-fit: cover;
+  display: flex;
+}
+.stories {
+  width: 100%;
+  position: relative;
+}
+.img-button {
+  position: absolute;
+  border: none;
+  top: 87%;
+  right: 31%;
+  background-color: #fff;
+  color: #000;
+}
+.pos-vides {
+  width: 100%;
+  position: relative;
+}
+.vides-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 1rem;
+}
+.vides-item img {
+  width: 100%;
+}
+.youtube-icon-1 {
+  position: absolute;
+  top: 51%;
+  right: 74%;
+  color: #000;
+  font-size: 3.5rem;
+}
+.youtube-icon-2 {
+  position: absolute;
+  top: 51%;
+  right: 23%;
+  color: #000;
+  font-size: 3.5rem;
+}
+.vides-item {
+  object-fit: cover;
+  display: flex;
+}
+.contact {
+  background-color: #ededed;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  margin: 2rem 1rem;
+  align-items: center;
+  padding: 1rem 0;
+}
+.contact h1 {
+  text-align: end;
+  font-family: 'Brush Script MT', cursive;
+  padding: 0 1rem;
+}
+.sub-cont {
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  width: 22rem;
+}
+.sub-but {
+  padding: 0.25rem 1.5rem;
+}
+a.nav-link-2 {
+  padding: 0 0.5rem;
+}
+.footer-icons {
+  text-align: center;
+  font-size: 1.5rem;
+}
+footer {
+  padding: 2rem 0;
+  margin: 0 1rem;
+}
+hr:not([size]) {
+  height: 2px;
+}
+.sub-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.sub-footer p {
+  width: 100%;
+}
+@media only screen and (max-width: 600px) and (min-width: 250px) {
+  h2 {
+    font-size: 0.75rem !important;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  p {
+    width: 60%;
+    font-size: 0.75rem;
+  }
+  button {
+    font-size: 0.75rem;
+    margin: 0 !important;
+  }
+  .social-media-icons {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+    text-align: right;
+  }
+  .social-media-icons i {
+    font-size: 1rem;
+    padding: 0px 0px 0 0.25rem;
+  }
+  .website-logo {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .sub-nav-bar {
+    grid-column: 1 / span3;
+    grid-row: 2;
+    margin-top: 1rem;
+  }
+  .nav-bar {
+    padding: 0.5rem 1rem;
+  }
+  .nav-link {
+    font-size: 0.75rem;
+    padding: 0 0.3rem;
+  }
+  .item-2 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .item-3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .item-2-text {
+    position: absolute;
+    top: 12%;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-3-text {
+    position: absolute;
+    top: 5%;
+    right: 60%;
+  }
+  .item-4-text {
+    position: absolute;
+    top: 2%;
+    right: 8%;
+  }
+  .item-5-text {
+    position: absolute;
+    top: 55%;
+    right: 50%;
+  }
+  .item-6-text {
+    position: absolute;
+    top: 5%;
+    right: 28%;
+  }
+  .card-grid,
+  .stories-grid {
+    display: block;
+  }
+  .img-button {
+    top: 92.9%;
+    right: 57.5%;
+  }
+  .vides-grid {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .youtube-icon-1 {
+    top: 32.4%;
+    right: 47%;
+    font-size: 2rem;
+  }
+  .youtube-icon-2 {
+    position: absolute;
+    top: 76%;
+    right: 45%;
+    color: #000;
+    font-size: 2rem;
+  }
+  .sub-but {
+    padding: 0.35rem 1.5rem;
+  }
+  .contact {
+    grid-template-columns: 100%;
+  }
+  .contact h1 {
+    text-align: center;
+  }
+  .sub-cont {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer-icons {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+}
